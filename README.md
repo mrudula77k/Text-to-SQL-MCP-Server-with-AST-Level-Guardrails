@@ -72,10 +72,10 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-### **3. Run the Evaluation Suite**
+## **3. Run the Evaluation Suite**
 python evals/run_evals.py
 
-###  **4. Start the Interactive Gemini Agent**
+##  **4. Start the Interactive Gemini Agent**
 # Windows CMD
 set GEMINI_API_KEY=your_key
 python client/gemini_client.py

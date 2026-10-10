@@ -2,6 +2,10 @@
 
 
 
+
+https://github.com/user-attachments/assets/0d41cf9e-18a5-4a28-9daa-542af52c8b01
+
+
 An enterprise-grade Model Context Protocol (MCP) server that provides governed, read-only Text-to-SQL capabilities over relational databases. Built with AST-level security validation, automated query planning checks, and an automated red-team evaluation suite.
 
 ## The Problem
@@ -89,3 +93,4 @@ python client/gemini_client.py
 export GEMINI_API_KEY="your_key"
 python client/gemini_client.py
 ```
+

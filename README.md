@@ -1,6 +1,6 @@
 # Text-to-SQL-MCP-Server-with-AST-Level-Guardrails
 
-# Governed Text-to-SQL MCP Server with AST-Level Guardrails
+
 
 An enterprise-grade Model Context Protocol (MCP) server that provides governed, read-only Text-to-SQL capabilities over relational databases. Built with AST-level security validation, automated query planning checks, and an automated red-team evaluation suite.
 

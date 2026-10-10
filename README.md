@@ -67,16 +67,20 @@ We evaluated the server against both an execution accuracy benchmark and a malic
 
 ### 2. Installation
 ```bash
-git clone [https://github.com/your-username/safe-text-to-sql-mcp.git](https://github.com/your-username/safe-text-to-sql-mcp.git)
-cd safe-text-to-sql-mcp
+git clone https://github.com/mrudula77k/Text-to-SQL-MCP-Server-with-AST-Level-Guardrails.git
+cd Text-to-SQL-MCP-Server-with-AST-Level-Guardrails
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
-## **. Run the Evaluation Suite**
+### 3. Run the Evaluation Suite
+```bash
 python evals/run_evals.py
+```
 
-##  **. Start the Interactive Gemini Agent**
+### 4. Start the Interactive Gemini Agent
+```bash
 # Windows CMD
 set GEMINI_API_KEY=your_key
 python client/gemini_client.py
@@ -84,4 +88,4 @@ python client/gemini_client.py
 # Linux / macOS
 export GEMINI_API_KEY="your_key"
 python client/gemini_client.py
-
+```

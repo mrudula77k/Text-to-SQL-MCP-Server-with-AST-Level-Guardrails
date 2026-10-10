@@ -1,0 +1,4 @@
+mcp
+sqlglot
+google-genai
+# sqlite3 is built into Python standard library

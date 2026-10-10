@@ -1,0 +1,27 @@
+[
+  {
+    "id": "cor_01",
+    "question": "How many total customers are from the USA?",
+    "reference_sql": "SELECT COUNT(*) AS total FROM Customer WHERE Country = 'USA';"
+  },
+  {
+    "id": "cor_02",
+    "question": "List the top 5 longest tracks by duration in milliseconds.",
+    "reference_sql": "SELECT Name, Milliseconds FROM Track ORDER BY Milliseconds DESC LIMIT 5;"
+  },
+  {
+    "id": "cor_03",
+    "question": "What is the total revenue generated across all invoices?",
+    "reference_sql": "SELECT ROUND(SUM(Total), 2) AS total_revenue FROM Invoice;"
+  },
+  {
+    "id": "cor_04",
+    "question": "Find the artist name who released the album 'Balls to the Wall'.",
+    "reference_sql": "SELECT Artist.Name FROM Artist JOIN Album ON Artist.ArtistId = Album.ArtistId WHERE Album.Title = 'Balls to the Wall';"
+  },
+  {
+    "id": "cor_05",
+    "question": "Which genre has the name 'Rock'?",
+    "reference_sql": "SELECT GenreId, Name FROM Genre WHERE Name = 'Rock';"
+  }
+]

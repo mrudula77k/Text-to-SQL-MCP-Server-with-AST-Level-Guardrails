@@ -17,13 +17,14 @@ Prompt engineering alone fails to prevent SQL injection or model hallucinations.
 
 ## Architecture
 
+```text
 ┌─────────────────────────────────┐
 │     Custom MCP Client           │
 │   Gemini 3.5 Flash-Lite         │
 │  (Autonomous Tool Routing Loop) │
 └────────────────┬────────────────┘
-│ MCP Protocol (stdio)
-▼
+                 │ MCP Protocol (stdio)
+                 ▼
 ┌─────────────────────────────────┐
 │           MCP Server            │
 │                                 │
@@ -41,10 +42,10 @@ Prompt engineering alone fails to prevent SQL injection or model hallucinations.
 │   - EXPLAIN Query Cost Check    │
 │   - JSONL Audit Logging         │
 └────────────────┬────────────────┘
-│ Sanitized SQL Execution
-▼
-SQLite Chinook Database
-
+                 │ Sanitized SQL Execution
+                 ▼
+     SQLite Chinook Database
+```
 ---
 
 ## Evaluation Benchmark & Security Results
@@ -72,10 +73,10 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-## **3. Run the Evaluation Suite**
+## **. Run the Evaluation Suite**
 python evals/run_evals.py
 
-##  **4. Start the Interactive Gemini Agent**
+##  **. Start the Interactive Gemini Agent**
 # Windows CMD
 set GEMINI_API_KEY=your_key
 python client/gemini_client.py
